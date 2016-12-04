@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_view_background_color">#80000000</color>
+    <color name="status_view_center_line_color">#ff0000</color>
+    <color name="message_view_background_color">#90000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

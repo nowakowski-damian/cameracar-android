@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thirteendollars.cameracar.ui.activities.MainActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        />
+
+    <!-- START OF UPPER MESSAGE LAYOUT -->
+    <LinearLayout
+        android:id="@+id/message_view"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/message_view_background_color">
+
+        <TextView
+            android:id="@+id/message_text_l"
+            style="@style/UpperMessageTextStyle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/message_text_r"
+            style="@style/UpperMessageTextStyle"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <!-- END OF UPPER MESSAGE LAYOUT -->
+
+
+    <!-- START OF COMPASS LAYOUT -->
+    <LinearLayout
+        android:layout_below="@id/message_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <include android:id="@+id/left_compass_layout" layout="@layout/compass_layout"/>
+
+        <include android:id="@+id/right_compass_layout" layout="@layout/compass_layout" />
+
+    </LinearLayout>
+    <!-- END OF COMPASS LAYOUT -->
+
+
+    <!-- START OF STATUS LAYOUT -->
+    <LinearLayout
+        android:id="@+id/status_whole_view"
+        android:padding="@dimen/status_view_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/status_view_background_color">
+
+        <include android:id="@+id/status_layout_left" layout="@layout/status_layout"/>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/status_view_padding"
+            android:layout_marginRight="@dimen/status_view_padding"
+            android:layout_width="@dimen/status_view_center_line_width"
+            android:layout_height="match_parent"
+            android:background="@color/status_view_center_line_color"/>
+
+        <include android:id="@+id/status_layout_right" layout="@layout/status_layout"/>
+
+    </LinearLayout>
+    <!-- END OF STATUS LAYOUT -->
+
+
+</RelativeLayout>
+

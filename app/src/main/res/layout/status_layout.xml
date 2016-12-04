@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_wifi_connection_label"
+            style="@style/MenuHeaderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_ssid"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/ssid"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_wifi_status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_signal_strength"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/sig_strength"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_tcp_label"
+            style="@style/MenuHeaderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_tcp_ip"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/vehicle_server_ip"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_tcp_status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/vehicle_server_status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_udp_label"
+            style="@style/MenuHeaderTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_udp_ip"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/camera_server_ip"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/status_layout_udp_status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"/>
+        <TextView
+            android:id="@+id/camera_server_status"
+            style="@style/MenuTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"/>
+    </TableRow>
+
+</TableLayout>

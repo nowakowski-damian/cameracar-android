@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="status_view_padding">15dp</dimen>
+    <dimen name="status_view_center_line_width">2dp</dimen>
+</resources>
